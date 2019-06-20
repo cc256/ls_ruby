@@ -1,4 +1,3 @@
-
 loop do
   number = rand(100)
   puts number

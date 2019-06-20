@@ -5,7 +5,6 @@ loop do
   puts 'Incorrect answer. Please answer "yes".'
 end
 
-
 # answer = ""
 # while answer != "yes"
 #   puts 'Should I stop looping?'

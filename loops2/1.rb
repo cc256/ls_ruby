@@ -1,4 +1,3 @@
-
 count = 1
 
 loop do
@@ -7,6 +6,7 @@ loop do
   else
     puts "#{count} is even!"
   end
+
   break if count == 5
   count += 1
 end
