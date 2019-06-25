@@ -1,7 +1,23 @@
-def reverse_sentence(string)
-  return string.split(" ").reverse.join(" ")
+vehicles = [
+  'car', 'car', 'truck', 'car', 'SUV', 'truck',
+  'motorcycle', 'motorcycle', 'car', 'truck'
+]
+
+def count_occurrences(vehicles)
+  groups =  {}
+
+  vehicles.each do |vehicle|    
+    if groups[vehicle]
+      groups[vehicle] += 1
+    else
+      groups[vehicle] = 1
+    end
+  end
+
+  groups.each do |key, value|
+    puts "#{key} => #{value}"
+  end
+
 end
 
-puts reverse_sentence('') == ''
-puts reverse_sentence('Hello World') == 'World Hello'
-puts reverse_sentence('Reverse these words') == 'words these Reverse'
+count_occurrences(vehicles)

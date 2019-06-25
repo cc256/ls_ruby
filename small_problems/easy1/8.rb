@@ -1,7 +1,6 @@
-def sum(integer)
-  return integer.digits.sum
+def average(array)
+  return array.sum / array.length
 end
 
-puts sum(23) == 5
-puts sum(496) == 19
-puts sum(123_456_789) == 45
+puts average([1, 5, 87, 45, 8, 8]) == 25
+puts average([9, 47, 23, 95, 16, 52]) == 40

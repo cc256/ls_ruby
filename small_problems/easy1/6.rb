@@ -1,21 +1,13 @@
-def stringy(integer)
-  string = ""
+def reverse_words(string)
+  words = string.split(" ")
 
-  integer.times do |n|
-    if (n + 1).odd?           #or #(n + 1).odd? ? string += "1" : string += "0"
-      string += "1"
-    else
-      string += "0"  
-    end
+  words.each do |word|
+    word.reverse!
   end
 
-
-  return string
+  return words.join(" ")
 end
 
-
-
-puts stringy(6) == '101010'
-puts stringy(9) == '101010101'
-puts stringy(4) == '1010'
-puts stringy(7) == '1010101'
+puts reverse_words('Professional')          # => lanoisseforP
+puts reverse_words('Walk around the block') # => Walk dnuora the kcolb
+puts reverse_words('Launch School')         # => hcnuaL loohcS
